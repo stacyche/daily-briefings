@@ -55,11 +55,11 @@ heroku config # at this time, results might be empty-ish
 heroku config:set APP_ENV="production"
 
 heroku config:set SENDGRID_API_KEY="_________"
-heroku config:set SENDER_EMAIL_ADDRESS="someone@gmail.com"
+heroku config:set SENDER_EMAIL_ADDRESS="xc172@georgetown.edu"
 
 heroku config:set COUNTRY_CODE="US"
 heroku config:set ZIP_CODE="20057"
-heroku config:set USER_NAME="Jon Snow"
+heroku config:set USER_NAME="Stacy Che"
 ```
 
 At this point, you should be able to verify the production environment has been configured with the proper environment variable values:
