@@ -73,6 +73,18 @@ python -m app.daily_briefing
 APP_ENV="production" COUNTRY_CODE="US" ZIP_CODE="20057" python -m app.daily_briefing
 ```
 
+# Run the Application
+view the weather forecast of difference areas in local host: 
+```
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+export FLASK_APP=web_app
+flask run
+```
+
 
 ## Testing
 
@@ -89,5 +101,10 @@ CI=true pytest
 ## [Deploying](/DEPLOYING.md)
 
 Follow the deployment instructions to deploy the app to a remote server and schedule the server to send you the weather forecast email every day.
+
+to view to server logs and troubleshoot as necessary: 
+```
+heroku logs --tail 
+```
 
 ## [License](/LICENSE.md)
