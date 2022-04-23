@@ -4,6 +4,9 @@ Sends you a customized email every morning, with information of interest, such a
 
 ![](https://user-images.githubusercontent.com/1328807/77860069-173ef580-71db-11ea-83c6-5897bb9f4f51.png)
 
+
+
+
 ## Installation
 
 Create a copy of this [template repo](https://github.com/prof-rossetti/daily-briefings-py), then clone or download your new repo onto your local computer (for example to the Desktop), and navigate there from the command-line:
@@ -25,6 +28,9 @@ Then, within an active virtual environment, install package dependencies:
 pip install -r requirements.txt
 ```
 
+
+
+
 ## Configuration
 
 Follow these [SendGrid setup instructions](https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/sendgrid.md#setup) to sign up for a SendGrid account, configure your account's email address (i.e. `SENDER_EMAIL_ADDRESS`), and obtain an API key (i.e. `SENDGRID_API_KEY`).
@@ -44,6 +50,9 @@ SENDER_EMAIL_ADDRESS="_______________"
 #ZIP_CODE="10017"
 #USER_NAME="Jon Snow"
 ```
+
+
+
 
 ## Usage
 
@@ -73,6 +82,9 @@ python -m app.daily_briefing
 APP_ENV="production" COUNTRY_CODE="US" ZIP_CODE="20057" python -m app.daily_briefing
 ```
 
+
+
+
 # Run the Application
 view the weather forecast of difference areas in local host: 
 ```
@@ -84,6 +96,8 @@ FLASK_APP=web_app flask run
 export FLASK_APP=web_app
 flask run
 ```
+
+
 
 
 ## Testing
@@ -98,6 +112,8 @@ CI=true pytest
 ```
 
 
+
+
 ## [Deploying](/DEPLOYING.md)
 
 Follow the deployment instructions to deploy the app to a remote server and schedule the server to send you the weather forecast email every day.
@@ -106,5 +122,8 @@ to view to server logs and troubleshoot as necessary:
 ```
 heroku logs --tail 
 ```
+
+
+
 
 ## [License](/LICENSE.md)
